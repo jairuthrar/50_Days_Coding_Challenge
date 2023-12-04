@@ -37,8 +37,8 @@ public class Binnarysearch {
 	    		 for(;i<arr_size;i++)
 	    		 {
 	    			 if(find_element==array[i]) 
-	    			 {
-		    			 System.out.print("element found at the index of:"+i);
+	    			 { 
+                                   return 1;//element found 
 
 	    			 }
 	    			 
@@ -47,7 +47,7 @@ public class Binnarysearch {
 	    	 }
 	     
 	    	 else
-	    		 System.out.print("element not found in  this  array");	 
+	    		return -1;//element not found in  this  array");	 
 	     }	 
 	    	 
 	}    
