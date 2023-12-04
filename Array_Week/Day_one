@@ -1,4 +1,6 @@
-/*
+/* By using BINARY SEARCH - search a element in the array,If the element is present in the array then print the poistion of the array orelse print element not found.
+*/ 
+
 import java.util.*;
 public class Binnarysearch {
 
