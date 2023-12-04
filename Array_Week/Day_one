@@ -1,0 +1,56 @@
+import java.util.*;
+public class Binnarysearch {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		System.out.println("enter array size:");
+	    int arr_size=input.nextInt();
+	    
+		System.out.println("enter element to be find:");
+        int find_element=input.nextInt();
+        
+		int mid_element=arr_size/2; //for finding middle element
+        int array[]=new int[arr_size];
+        
+	     //for getting elements
+		 System.out.println("enter elements:");
+		 
+         for(int i=0;i<arr_size;i++)
+	     {
+	    	 array[i]=input.nextInt();
+	     }
+         
+	         if(find_element<=array[mid_element])
+	           {
+		    	 int i=mid_element;
+	    	     for(;i>=0;i--)
+	    	      {
+	    		   if(find_element==array[i])
+	    		      System.out.print("element found at the index of:"+i);	 
+	    		 }
+	    	 
+	            }
+	    	else if(find_element>=array[mid_element])
+	    	 {
+	    		 int i=mid_element;
+	    		 for(;i<arr_size;i++)
+	    		 {
+	    			 if(find_element==array[i]) 
+	    			 {
+		    			 System.out.print("element found at the index of:"+i);
+
+	    			 }
+	    			 
+	    		 }
+	    	 
+	    	 }
+	     
+	    	 else
+	    		 System.out.print("element not found in  this  array");	 
+	     }	 
+	    	 
+	}    
+	        
+	     
+	
