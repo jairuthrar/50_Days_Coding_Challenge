@@ -1,4 +1,4 @@
-/* reverse all the element in the array after the given position*/
+/* reverse all the element in the array after the given   position*/
 import java.util.*;
 public class Solution {
      public static void reverseArray(ArrayList<Integer> arr, int m) {
