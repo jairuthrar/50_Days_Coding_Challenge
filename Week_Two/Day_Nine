@@ -1,4 +1,4 @@
-//optimized methid for finding the missing element in a array
+//optimized method for finding the missing element in a array
 
 import java.io.*;
 import java.util.*;
