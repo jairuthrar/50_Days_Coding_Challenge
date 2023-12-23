@@ -1,0 +1,52 @@
+/* Given a list of names, display the longest name.
+Example:
+
+Input:
+N = 5
+names[] = { "Geek", "Geeks", "Geeksfor",
+  "GeeksforGeek", "GeeksforGeeks" }
+
+Output:
+GeeksforGeeks
+ */
+
+import java.util.*;
+import java.util.Scanner;
+
+  public class longestString {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int t;
+
+        t = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            int n;
+            n = sc.nextInt();
+            String[] names = new String[n];
+
+            for (int j = 0; j < n; j++) names[j] = sc.next();
+
+            GFG obj = new GFG();
+            System.out.println(obj.longest(names, n));
+        }
+    }
+
+}
+
+
+
+
+class GFG {
+    String longest(String names[], int n) {
+        
+        String max = null;
+        for (int i = 0; i < n; i++) {
+            if (max == null || (names[i] != null && names[i].length() > max.length())) {
+                max = names[i];
+            }
+        }
+        return max;
+    }
+}
