@@ -1,0 +1,57 @@
+/*Win from a cash prize pool of INR 15,000
+Check out Hack-For-Health Hackathon Now!
+
+banner
+You are given a string s. You need to reverse the string.
+
+Example 1:
+
+Input:
+s = Geeks
+Output: skeeG
+Example 2:
+
+Input:
+s = for
+Output: rof*/
+
+
+
+
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Driver
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(read.readLine());
+        
+        while(t-- >0)
+        {
+            String str = read.readLine();
+            System.out.println(new Reverse().reverseWord(str));
+        }
+    }
+}
+
+
+class Reverse {
+
+ public static String reverseWord(String str) {
+        char[] reverse = str.toCharArray();
+
+        int mid = reverse.length / 2;
+
+        for (int i = 0; i < mid; i++) {
+            char temp = reverse[i];
+            reverse[i] = reverse[reverse.length - 1 - i];
+            reverse[reverse.length - 1 - i] = temp;
+        }
+
+        return new String(reverse);
+    }
+}
