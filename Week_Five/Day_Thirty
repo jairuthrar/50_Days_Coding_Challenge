@@ -1,0 +1,11 @@
+'''Converting an string of integer into decimal '''
+
+import decimal   
+
+user_input=str(input("Enter the  string  of integers  : "))
+print("type of the input : ",type(user_input))
+
+user_input=decimal.Decimal(user_input) #converting the values into an decimal
+
+print("type of the input : ",type(user_input).__name__)
+print("input_value: ",user_input)
