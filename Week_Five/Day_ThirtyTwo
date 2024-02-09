@@ -1,0 +1,13 @@
+'''to check whether the string is pangram or not'''
+
+user_input=input("enter the string:")
+user_input = user_input.lower()
+user_input=set(user_input)
+count=0
+for i in user_input:
+    if i.isalpha():
+        count+=1
+if count==26:
+    print("The given string is pangram")
+else:
+    print("the given string is not a pangram")    
