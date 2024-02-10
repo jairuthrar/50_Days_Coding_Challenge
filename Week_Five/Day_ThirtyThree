@@ -1,0 +1,17 @@
+#implementing the concept of  ceaser cipher 
+
+user_input = input("Enter plain text: ")
+key = int(input("Enter key: "))
+cipher_text = ""
+
+for i in user_input:
+    if i>='a' and i<='z':
+        v = chr((ord(i) - ord('a') + key) % 26 + ord('a'))
+        cipher_text += v
+    elif i>='A' and i<='Z':
+        v = chr((ord(i) - ord('A') + key) % 26 + ord('A'))
+        cipher_text += v
+    else:
+        cipher_text += i
+
+print("Cipher text: ", cipher_text)
