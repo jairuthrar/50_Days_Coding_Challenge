@@ -1,0 +1,10 @@
+#implementing stack using list
+n=int(input("enter size of an stack : "))
+stack=[]
+while n>0:
+    value=int(input("enter value : "))
+    stack.append(value)
+    n-=1
+ 
+for i in range(len(stack)):
+    print(stack.pop(),end=" ")
