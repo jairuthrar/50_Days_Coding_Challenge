@@ -1,0 +1,6 @@
+user_input=str(input("enter string : "))
+pal=user_input[::-1]
+if(user_input==pal):
+    print("palindrome")
+else:
+    print("not a palindrome")    
