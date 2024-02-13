@@ -1,0 +1,11 @@
+size=int(input("enter size: "))
+lst=[]
+
+for i in range (size):
+   lst.append( int(input()))
+
+print(lst)    
+if size%2==0:
+    print("median: ",(lst[(size//2)]+lst[size//2-1])//2)
+else:
+    print("median: ",lst[size//2])    
