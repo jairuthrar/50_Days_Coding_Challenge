@@ -1,0 +1,17 @@
+ #amstrong number
+
+value= int(input("enter number: "))
+number = value
+length = len(str( value))
+v = 0
+
+while  value != 0:
+    remain = value % 10
+    v += (remain ** length)
+    value //= 10
+
+if number == v:
+    print("it's an Armstrong number")
+else:
+    print("it's not an Armstrong number")
+
