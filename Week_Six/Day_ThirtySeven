@@ -1,4 +1,4 @@
- #amstrong number
+ #armstrong number
 
 value= int(input("enter number: "))
 number = value
