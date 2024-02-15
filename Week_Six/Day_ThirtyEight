@@ -1,0 +1,14 @@
+'''takes a sentence  as input and returns the longest even length 
+word in a sentence ,if it has no even length word then return no longest even length word'''
+
+user_input=input("sentence: ")
+user_input=user_input.split(" ")
+longest=0
+for i in range (len(user_input)):
+    if len(user_input[i])%2==0:
+        if(len(user_input[i])>longest):
+            longest=i
+if(longest==0):
+    print("no even length word in a sentence")   
+else:                 
+    print("longest even word: ",user_input[longest])
