@@ -1,0 +1,7 @@
+import calendar
+import time
+year=int(input("Enter Year: "))
+month=int(input("Enter Month: "))
+print(end="\n"+(calendar.month(year,month)))
+
+print(end="\n"+"Current Time is: "+time.ctime())
