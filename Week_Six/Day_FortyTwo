@@ -1,0 +1,38 @@
+#Create a pandas series by using list, dictionary and array
+import pandas as pd
+import numpy as np
+
+print("_____Implementing Series using array(numpy)_____")
+
+arr=np.array([2,3,4,5])
+print(pd.Series(arr))
+
+print("_____Implementing Series using list_____")
+
+lst=['a','b','c','d']
+print(pd.Series(lst))
+
+print("_____Implementing Series using dictionary____")
+
+dict={"name: ":'xyz',"age: ":20}
+pd.Series(dict)
+
+#output
+_____Implementing Series using array(numpy)_____
+0    2
+1    3
+2    4
+3    5
+dtype: int32
+_____Implementing Series using list_____
+0    a
+1    b
+2    c
+3    d
+dtype: object
+_____Implementing Series using dictionary____
+
+name:     xyz
+age:       20
+dtype: object
+
