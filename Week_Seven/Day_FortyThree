@@ -1,0 +1,65 @@
+import pandas as pd
+#mathematical functions
+
+a=pd.Series([60,70,80])
+b=pd.Series([20,30,40])
+print("Addition")
+print(a.add(b))
+print("Subtraction")
+print(a.subtract(b))
+print("multiplication")
+print(a.multiply(b))
+print("Division")
+print(a.divide(b))
+print("Modulus")
+print(a.mod(b))
+print("Lessthan")
+print(a.le(b))
+print("GreaterThan")
+print(a.gt(b))
+print("Equalto")
+print(a.eq(b))
+
+
+output
+------
+Addition
+0     80
+1    100
+2    120
+dtype: int64
+Subtraction
+0    40
+1    40
+2    40
+dtype: int64
+multiplication
+0    1200
+1    2100
+2    3200
+dtype: int64
+Division
+0    3.000000
+1    2.333333
+2    2.000000
+dtype: float64
+Modulus
+0     0
+1    10
+2     0
+dtype: int64
+Lessthan
+0    False
+1    False
+2    False
+dtype: bool
+GreaterThan
+0    True
+1    True
+2    True
+dtype: bool
+Equalto
+0    False
+1    False
+2    False
+dtype: bool
