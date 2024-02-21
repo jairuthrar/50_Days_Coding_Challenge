@@ -1,0 +1,18 @@
+#Sorting the dictionary based on values
+
+
+dictionary={'a':23,"b":45,"c":56,"d":3}
+print("Dictionary before sorting\n",dictionary)
+temp=list(dictionary.values())
+temp.sort()
+dictionary=dict(zip(dictionary.keys(),temp))
+print("Dictionary after sorting\n",dictionary)
+
+
+output
+-------
+
+Dictionary before sorting
+ {'a': 23, 'b': 45, 'c': 56, 'd': 3}
+Dictionary after sorting
+ {'a': 3, 'b': 23, 'c': 45, 'd': 56}
