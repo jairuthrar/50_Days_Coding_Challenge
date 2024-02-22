@@ -1,0 +1,28 @@
+#convert numeric words into numbers upto 1-10
+numbers={
+    'one':1,
+    'two':2,
+    'three':3,
+    'four':4,
+    'five':5,
+    'six':6,
+    'seven':7,
+    'eight':8,
+    'nine':9,
+    'ten':10,
+    'zero':0
+
+    }
+user_input=str(input("Enter input: "))
+user_input=user_input.split()
+for i in user_input:
+    i= i.lower()
+    if i in numbers.keys():
+        print(numbers[i],end=" ")
+
+
+output
+------
+
+Enter input: five Six three oNe
+5 6 3 1
